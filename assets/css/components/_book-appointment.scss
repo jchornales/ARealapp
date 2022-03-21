@@ -1,0 +1,111 @@
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        .text {
+            margin: 20px;
+            font-family: $sub-font;
+            font-size: $subtitle-fontsize;
+            letter-spacing: 2px;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 0;
+        padding: 30px 25px;
+
+        fieldset {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: all .3s ease-out;
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .column {
+                    width: 100% !important;
+                    margin: 0 2px;
+                }
+            }
+        }
+
+        legend {
+            visibility: hidden;
+        }
+    }
+
+    .input-block {
+        margin-bottom: 10px;
+
+        label {
+            font-size: 12px;
+            color: $dark;
+            font-family: $sub-font;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        input,
+        select,
+        textarea {
+            display: block;
+            width: 100%;
+            padding: 0 15px;
+            font-size: $base-fontsize;
+            line-height: 30px;
+            color: $dark;
+            background: #fff;
+            border: 2px solid $dark;
+            border-radius: 2px;
+        }
+
+        select {
+            padding: 7px 15px;
+
+            option {
+                font-size: $base-fontsize;
+                line-height: 30px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-m) {
+    .modal-content {
+        .title {
+            .text {
+                margin: 0 0 20px 0;
+                font-family: $sub-font;
+                font-size: $subtitle-fontsize;
+                letter-spacing: 2px;
+            }
+        }
+
+        .form {
+            fieldset {
+                .row {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .column {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

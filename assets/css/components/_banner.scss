@@ -1,0 +1,60 @@
+.our-projects {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(0deg, $overlay-dark, $overlay-dark),
+            url(../images/banner.jpg);
+        background-size: cover;
+        background-position: center;
+
+        .question {
+            font-family: $sub-font;
+            letter-spacing: 10px;
+            color: $white-crisped;
+            font-weight: 600;
+            line-height: 1.5;
+            font-size: $subtitle-fontsize;
+        }
+
+        .invitation {
+            font-family: $primary-font;
+            font-size: $banner-font;
+            font-weight: 600;
+            color: $white-crisped;
+            line-height: 1.5;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xs) {
+    .our-projects {
+        .banner {
+            .question {
+                font-size: 10px;
+            }
+
+            .invitation {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-l) {
+    .our-projects {
+        .banner {
+            .question {
+                font-size: $subtitle-fontsize;
+            }
+
+            .invitation {
+                font-size: $banner-font;
+            }
+        }
+    }
+}
