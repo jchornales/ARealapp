@@ -1,0 +1,43 @@
+.highlight-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    z-index: 1;
+    padding: 50px 0 0 0;
+
+    &>.title {
+        &>.text {
+            font-family: $sub-font;
+            font-size: $header-fontsize;
+            letter-spacing: 2px;
+        }
+    }
+
+    .highlight-images {
+        display: flex;
+        margin: 0 auto 50px auto;
+        width: 95%;
+
+        .highlight-image {
+            width: 100%;
+            padding: 0 10px;
+
+            img {
+                width: 100%;
+                height: auto;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-l) {
+    .highlight-section {
+        .highlight-images {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+// Color Scheme
+$turquoise: #6b969d;
+$turquoise-dark:#296e6b;
+$turquoise-light: #aed3d8;
+$white-crisped: #eceae3;
+$grey: #bac0c3;
+$dark: #2a2f3c;
+$overlay: hsla(0, 100%, 100%, 0.3);
+$overlay-dark: hsla(0, 0, 0, 0.5);
+$overlay-darker: hsla(0, 0, 0, .9);
+
+// Fonts
+$primary-font: "optibakerdanmarkoneregular";
+$sub-font: "optitomaso-extendedregular";
+$base-fontsize: 14px;
+$header-fontsize: calc(14px * 2);
+$subtitle-fontsize: calc(14px * 1.5);
+$art-font: calc(14px * 6);
+$banner-font: calc(14px * 5);
+
+// Breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 460px;
+$breakpoint-m: 640px;
+$breakpoint-l: 768px;
+$breakpoint-xl: 1024px;

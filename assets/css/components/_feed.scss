@@ -1,0 +1,95 @@
+body {
+    background-color: #eeeeee;
+}
+
+nav {
+    .logo {
+        width: 100px;
+    }
+}
+
+.btn-primary {
+    color: $white-crisped;
+    background-color: $turquoise;
+    border-color: $turquoise;
+}
+
+.btn-primary:hover {
+    color: $turquoise;
+    background-color: $white-crisped;
+    border-color: $turquoise;
+}
+
+.btn-outline-primary {
+    color: $turquoise-dark;
+    background-color: transparent;
+    background-image: none;
+    border-color: $turquoise-dark;
+}
+
+.btn-outline-primary:hover,
+.btn-ouline-primary:active {
+    color: $white-crisped;
+    background-color: $turquoise-dark;
+    border-color: $turquoise-dark;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: $white-crisped;
+    background-color: $turquoise-dark;
+    border-color: $turquoise-dark;
+    box-shadow: 0 0 0 0.2rem $turquoise-light;
+
+}
+
+.form-control:focus {
+    border-color: $turquoise-dark;
+    box-shadow: 0 0 0 0.2rem $turquoise-light;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.2rem $turquoise-light;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: $dark;
+}
+
+a {
+    color: $turquoise-dark;
+}
+
+a:hover {
+    color: $turquoise;
+}
+
+.h5 {
+    color: $turquoise-dark;
+}
+
+.h7 {
+    font-size: 0.8rem;
+}
+
+.gedf-wrapper {
+    margin-top: 0.97rem;
+}
+
+@media (min-width: $breakpoint-l) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+    content: none;
+    display: none;
+}

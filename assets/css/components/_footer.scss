@@ -1,0 +1,106 @@
+@media (min-width: $breakpoint-xs) {
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 350px;
+        width: 100vw;
+        border-top: 1px solid $dark;
+        padding: 50px 5vw;
+        background: $dark;
+        font-family: $sub-font;
+
+        .title {
+            font-size: 1.5em;
+            font-weight: 900;
+            color: $white-crisped;
+        }
+
+
+        .contact-me {
+            width: 95%;
+
+            p {
+                font-size: 0.8em;
+                color: $white-crisped
+            }
+        }
+
+        .services {
+            p {
+                color: $grey;
+                font-weight: 400;
+                font-size: 0.9em;
+                line-height: 1.5em;
+                letter-spacing: 0.1em;
+                width: 65%;
+            }
+        }
+
+        .follow-me {
+            ul {
+                list-style: none;
+                padding: 0;
+                font-size: 0.8em;
+
+                li {
+                    margin: 10px 0;
+
+                    a {
+                        text-decoration: none;
+                        color: $white-crisped;
+
+                        &:hover {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        .developer-brand {
+            padding: 70px 0;
+
+            p {
+                font-size: 0.8em;
+                line-height: 2em;
+                margin: 0;
+                color: $grey;
+                letter-spacing: 2px;
+
+                i {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-l) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .contact-me {
+            width: 30%;
+
+            p {
+                font-size: 0.8em;
+            }
+        }
+
+        .services {
+            width: 35%;
+            margin: 0 2%;
+        }
+
+        .follow-me {
+            width: 30%;
+        }
+
+        .developer-brand {
+            padding: 70px 0;
+
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.buttons {
+	display: flex;
+}
+
+.action.primary {
+	display: grid;
+	place-items: center;
+	margin: 0 10px;
+	padding: 10px;
+	background-color: $turquoise;
+	border: 1px solid $turquoise;
+	color: $white-crisped;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+.action.primary:hover {
+	transform: scale(1.1);
+}
+
+.action.secondary {
+	display: grid;
+	place-items: center;
+	border: 1px solid $dark;
+	padding: 10px;
+	color: $dark;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+
+.action.secondary:hover {
+	background-color: $dark;
+	border: 1px solid $white-crisped;
+	color: $white-crisped;
+}
+
+@media (min-width: $breakpoint-xs) {
+	.action {
+		padding: 5px;
+		font-size: calc(14px * 0.6);
+		font-family: sans-serif;
+		font-weight: 500;
+	}
+}
+
+@media (min-width: $breakpoint-m) {
+	.action {
+		padding: 5px;
+		font-size: calc(14px * 0.8);
+	}
+}
+
+@media (min-width: $breakpoint-l) {
+	.action {
+		padding: 5px;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,27 @@
+// Imports
+@import "components/fonts";
+@import "components/variables";
+@import "components/navigation";
+@import "components/scrollup";
+@import "components/hero";
+@import "components/buttons";
+@import "components/about";
+@import "components/modal";
+@import "components/art-display";
+@import "components/card";
+@import "components/our-team";
+@import "components/banner";
+@import "components/calendar";
+@import "components/sign-in";
+@import "components/footer";
+@import "components/our-projects";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}

@@ -1,0 +1,154 @@
+.stop-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navigation {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+  .logo {
+    position: relative;
+    width: 100px;
+    z-index: 10;
+  }
+
+  .menu-btn {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 10;
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 30px;
+      height: 3px;
+      background: $dark;
+      margin: 6px 0;
+      transition: 0.8s;
+    }
+  }
+
+  .change {
+    .logo {
+      color: $dark !important;
+    }
+
+    .bar1 {
+      transform: rotate(-45deg) translate(-5px, 4px);
+      background: $dark !important;
+    }
+
+    .bar2 {
+      opacity: 0;
+    }
+
+    .bar3 {
+      transform: rotate(45deg) translate(-8px, -8px);
+      background: $dark !important;
+    }
+
+    &.menu {
+      pointer-events: auto;
+    }
+
+    &.menu-overlay {
+      transform: translateX(100%);
+    }
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+
+    .menu-overlay {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0.9;
+      left: -100%;
+      transition: 1s;
+    }
+
+    .-first {
+      background-color: $dark;
+      z-index: 3;
+    }
+
+    .-second {
+      background-color: $turquoise;
+      z-index: 4;
+    }
+
+    .-third {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $white-crisped;
+      z-index: 5;
+
+      .image-overlay {
+        position: absolute;
+        width: 100%;
+        z-index: 6;
+        opacity: 0.3;
+      }
+    }
+
+    .menu-item {
+      padding: 0;
+      list-style: none;
+      z-index: 7;
+
+      &>.links {
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .anchor {
+        color: $dark;
+        text-decoration: none;
+        line-height: 1.5;
+        font-size: calc(14px * 1.5);
+        font-family: $sub-font;
+        letter-spacing: 3px;
+        font-weight: 600;
+      }
+
+      .anchor:hover {
+        padding: 3px;
+        border-bottom: 3px solid $dark;
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xs) {
+  .image-overlay {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .image-overlay {
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation {
+    .logo {
+      width: 150px;
+    }
+  }
+}
