@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home || AReal : Augmented Reality 2D Floor Plan Scanner</title>
+	<link rel="shortcut icon" href="assets/images/AReal.svg" type="image/x-icon">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+	<!-- Markup for Navigation including menu -->
+	<nav id="header" class="navigation">
+		<div class="brand" data-role="brand">
+			<a href="index.html">
+				<img class="logo" src="assets/images/AReal.svg" alt="AReal Logo" />
+			</a>
+		</div>
+		<div class="hamburger">
+			<div class="menu-btn" data-role="menu-btn" class="intro">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</div>
+
+		<!-- Markup for Overlay Menu -->
+		<div class="menu" data-role="menu">
+			<div class="menu-overlay -first" data-sequence="first"></div>
+			<div class="menu-overlay -second" data-sequence="second"></div>
+			<div class="menu-overlay -third" data-sequence="third">
+				<ul class="menu-item">
+					<li class="links">
+						<a href="index.html" data-role="menu-link" class="anchor">HOME</a>
+					</li>
+					<li class="links">
+						<a href="#" data-link="about" class="anchor">ABOUT APP</a>
+					</li>
+					<li class="links">
+						<a href="#" data-link="our-team" class="anchor">OUR TEAM</a>
+					</li>
+					<li class="links">
+						<a href="#" data-link="our-projects" class="anchor">OUR PROJECTS</a>
+					</li>
+					<li class="links">
+						<!-- Hide this link if logged in || set visibility : hidden-->
+						<a href="#" data-link="log-in" class="anchor">LOG IN</a>
+						<!-- Show this link if logged in || set visibility : visible-->
+						<!-- <a style="visibility:hidden" href="#" data-link="log-in" class="anchor">MY FEED</a> -->
+					</li>
+				</ul>
+				<img class="image-overlay" src="assets/images/overlay1.jpg" alt="Architecture Background" />
+			</div>
+		</div>
+	</nav>
+
+	<!-- Markup for Home Hero Section -->
+	<section class="hero-section">
+		<img src="assets/images/hero-section.jpg" alt="Architectural Building Image" class="hero-image">
+		<div class="text-overlay">
+			<div class="introduction">
+				<p class="motto">
+					Complete Reality Capture
+				</p>
+				<p class="sub-motto">
+					Interior and exterior visual data any angle, all in one platform. Conceptual home designs, floor
+					plans, photorealistic 3D
+					renderings, home decoration and design proposals.
+				</p>
+				<div class="buttons">
+					<button class="action secondary" data-link="about-app">
+						LEARN MORE
+					</button>
+					<button class="action primary">
+						BOOK APPOINTMENT
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Markup for About App -->
+	<section class="about-app">
+		<div class="about-image">
+			<img data-aos="zoom-in" data-aos-duration="1000" src="assets/images/Advertisement.png" alt="Mobile Phone with AReal Logo">
+		</div>
+		<div class="about-description" data-aos="slide-left" data-aos-duration="500">
+			<h1 class="title"> About AReal App</h1>
+			<p class="body">
+				AReal is an android application that can feature the different angles of a building, the exterior, and
+				interior design. It also
+				provides easy access for the client when it comes to the project.
+			</p>
+			<div class="buttons">
+				<div class="action secondary" data-role="modal-trigger">
+					HOW TO INSTALL
+				</div>
+				<div class="action primary">
+					DOWNLOAD NOW
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" data-role="modal">
+			<div class="modal-overlay" data-role="modal-overlay"></div>
+			<div class="modal-box">
+				<div class="title">
+					<h1>How to Install</h1>
+					<div class="close" data-role="close-modal">
+						<img src="assets/images/close.png" alt="Close Icon">
+					</div>
+				</div>
+				<div class="body">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quam similique? Nesciunt debitis
+					pariatur officiis? Asperiores
+					a odit dolorum animi corporis, vero fugiat ad esse numquam labore sint totam repudiandae, similique
+					rerum tempora nesciunt
+					reiciendis laudantium deserunt iure assumenda magni error. Soluta nemo illo beatae vel, earum est
+					esse nostrum accusamus
+					quisquam adipisci aut minus repellat delectus, nesciunt officiis, perspiciatis minima possimus in.
+					Obcaecati nostrum,
+					similique sunt illo nulla quo consequatur quos possimus dolorum, consequuntur exercitationem eveniet
+					nesciunt commodi
+					temporibus aperiam, sapiente distinctio libero officiis tempora quaerat. Omnis ipsa fugiat facere
+					soluta est culpa, assumenda
+					consectetur laborum ea accusamus quidem rerum non illo molestiae mollitia adipisci laudantium atque
+					<!-- Developers : JC Hornales and JC Tapnio -->
+					Quidem asperiores minus laboriosam numquam eius nemo. Repellendus fugit ut fugiat? Voluptate
+					possimus rerum, debitis maiores
+					porro harum ea iure? Nostrum esse repudiandae aut dolor sed sunt corporis fugit beatae obcaecati
+					vero ex dolorum, atque
+					temporibus saepe error. Nemo nobis obcaecati adipisci, consequuntur voluptatem commodi ipsa debitis
+					culpa molestias eum
+					incidunt libero nostrum magni ut eius. Ipsa, tempora fugiat placeat velit vitae repudiandae facere
+					sint fuga dolorum fugit
+					doloremque illo sit ducimus nisi eveniet non quo delectus itaque amet maiores, sed repellendus
+					deserunt accusamus! Fugiat
+					facere eius vel illo iusto debitis reprehenderit molestias ducimus dicta ea fugit voluptatum quasi
+					beatae ipsam illum, at
+					quaerat numquam sequi corrupti labore, optio in commodi. Quia quasi facilis alias voluptas nulla
+					possimus velit pariatur quod
+					in unde, perferendis doloribus, est incidunt earum iure assumenda at! Exercitationem vitae
+					temporibus adipisci et voluptatum,
+					pariatur accusamus obcaecati suscipit voluptatem amet laborum esse quod? Veniam qui nulla nemo
+					beatae aliquid labore officiis
+					quisquam incidunt, ratione accusantium doloribus sed ad, animi possimus culpa rem fuga reprehenderit
+					facere! Debitis adipisci
+					quod, placeat explicabo repellendus unde reiciendis iste soluta deleniti ea alias ad nobis odit
+					cupiditate obcaecati aliquid
+					numquam? Iste nam rem nobis, beatae, alias ipsa enim, quaerat dolor aspernatur voluptas error.
+					Magni, consectetur accusantium!
+					Velit magnam sed fugit quia voluptatum. Quas aut sit corporis magni quidem optio. Perferendis,
+					voluptatem ratione animi magni
+					explicabo impedit doloribus atque eos dolore vero facilis deserunt accusamus corrupti aperiam
+					perspiciatis repellendus culpa
+					non adipisci consequatur. Aliquid est laudantium at voluptate error placeat unde. Eius optio
+					doloremque tempora alias nemo
+					corporis, labore tenetur nesciunt nobis dolores repellendus laborum inventore animi dicta aut porro
+					sint accusamus.
+					Voluptatibus, temporibus. Accusamus vero necessitatibus officiis iste voluptate magni deserunt, at,
+					perferendis quod nisi
+					voluptas dolor nobis architecto facilis nam, exercitationem incidunt adipisci obcaecati dignissimos
+					molestias! Sunt beatae
+					blanditiis exercitationem eum quae ducimus id ratione adipisci nesciunt optio commodi fugit culpa
+					tempora provident
+					praesentium natus expedita velit quasi quam tenetur neque earum, enim explicabo quaerat! Quia illo
+					magnam architecto
+					repellendus, voluptate odit labore quaerat sint reiciendis inventore similique eaque dolor sit nihil
+					accusantium dignissimos
+					nobis? Perferendis sed voluptates iste corporis eos accusamus, nesciunt architecto sequi ut officia
+					similique dolorum expedita
+					porro odit, explicabo obcaecati facere veritatis vitae, provident dolores vero? Voluptate animi eum
+					itaque dignissimos beatae
+					doloribus, delectus mollitia magni laboriosam eos consequatur autem fuga libero magnam quibusdam
+					deserunt quod!
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Markup for Art Display -->
+	<section class="art-display">
+		<div class="row -first">
+			<div class="column -first">
+				<h1 class="text" data-aos="slide-right" data-aos-duration="500">
+					Think globally, act locally.
+				</h1>
+			</div>
+			<div class="column -second">
+				<img data-aos="zoom-in" data-aos-duration="1000" src="assets/images/row1-image.jpg" alt="Architectural Image Turquoise">
+			</div>
+		</div>
+		<div class="row -second">
+			<div class="column -first">
+				<img data-aos="zoom-in" data-aos-duration="1000" src="assets/images/row2-image.jpg" alt="Architectural Image Turquoise">
+			</div>
+			<div class="column -second">
+				<h1 class="text" data-aos="slide-left" data-aos-duration="500">
+					Shaping your space, together.
+				</h1>
+			</div>
+		</div>
+	</section>
+
+	<!-- Markup for Our Team -->
+	<section class="our-team">
+		<div class="title">
+			<h1 class="text"> Our Team</h1>
+		</div>
+		<div class="row -first">
+			<div class="column -first">
+				<!-- Mark up for Profile Cards -->
+				<div class="card-wrapper" data-aos="fade-up" data-aos-duration="500">
+					<div class="card">
+						<div class="card-image">
+							<img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
+						</div>
+						<ul class="social-icons">
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-dribbble"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="details">
+							<h2>Aeron Elison
+								<br>
+								<span class="job-title">CAD Designer || Computer Engineer</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column -second">
+				<div class="card-wrapper" data-aos="fade-up" data-aos-duration="1000">
+					<div class="card">
+						<div class="card-image">
+							<img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
+						</div>
+						<ul class="social-icons">
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-dribbble"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="details">
+							<h2>Lisa Iwamoto
+								<br>
+								<span class="job-title">QA Engineer || Computer Engineer</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column -third">
+				<div class="card-wrapper" data-aos="fade-up" data-aos-duration="1500">
+					<div class="card">
+						<div class="card-image">
+							<img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
+						</div>
+						<ul class="social-icons">
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-dribbble"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="details">
+							<h2>Arley Licup
+								<br>
+								<span class="job-title">Developer || Computer Engineer</span>
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Markup for Our Projects -->
+	<section class="our-projects">
+		<div class="banner">
+			<div class="question">
+				NEED AN ARCHITECT?
+			</div>
+			<div class="invitation">
+				Let's work together
+			</div>
+		</div>
+
+		<div class="highlight-section">
+			<header class="title">
+				<h1 class="text">SAMPLE PROJECTS</h1>
+			</header>
+			<div class="highlight-images">
+				<div id="first-highlight" class="highlight-image">
+					<img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+						data-aos="fade-up" data-aos-duration="1000" />
+					<img src="https://images.unsplash.com/photo-1600585154084-4e5fe7c39198?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+						data-aos="fade-up" data-aos="fade-up" data-aos-duration="1000" />
+					<img src="https://images.unsplash.com/photo-1600047509358-9dc75507daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+						data-aos="fade-up" data-aos-duration="1000" />
+				</div>
+				<div id="second-highlight" class="highlight-image">
+					<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+						data-aos="fade-up" data-aos-duration="1000" /> <!-- Developers: JC Hornales and JC Tapnio -->
+					<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+						data-aos="fade-up" data-aos-duration="1000" />
+					<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+						data-aos="fade-up" data-aos-duration="1000" />
+				</div>
+				<div id="third-highlight" class="highlight-image">
+					<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+						data-aos="fade-up" data-aos-duration="1000" />
+					<img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+						data-aos="fade-up" data-aos-duration="1000" />
+					<img src="https://images.unsplash.com/photo-1602872029708-84d970d3382b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+						data-aos="fade-up" data-aos-duration="1000" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Markup for Sign in / Sign up -->
+	<section class="sign-in">
+		<div class="modal" data-role="sign-in">
+			<div class="title">
+				<div class="close" data-role="close-login-modal">
+					<img src="assets/images/close-white.png" alt="Close Icon">
+				</div>
+			</div>
+			<section class="forms-section">
+				<div class="forms">
+					<div class="form-wrapper is-active">
+						<button type="button" class="switcher switcher-login">
+							LOGIN
+							<span class="underline"></span>
+						</button>
+						<form class="form form-login">
+							<fieldset>
+								<legend>Please, enter your email and password for login.</legend>
+								<div class="input-block">
+									<label for="login-email">EMAIL</label>
+									<input id="login-email" type="email" required>
+								</div>
+								<div class="input-block">
+									<label for="login-password">PASSWORD</label>
+									<input id="login-password" type="password" required>
+								</div>
+							</fieldset>
+							<button type="submit" class="action primary btn-login">LOGIN</button>
+						</form>
+					</div>
+					<div class="form-wrapper">
+						<button type="button" class="switcher switcher-signup">
+							SIGN UP
+							<span class="underline"></span>
+						</button>
+						<form class="form form-signup">
+							<fieldset>
+								<legend>Please, enter your first name, last name, mobile, birthday, gender, account
+									type, email, password and password confirmation for sign up.
+								</legend>
+								<div class="row">
+									<div class="column -first">
+										<div class="input-block">
+											<label for="signup-first-name">FIRST NAME</label>
+											<input id="signup-first-name" type="text" required>
+										</div>
+										<div class="input-block">
+											<label for="signup-birthday">BIRTHDAY</label>
+											<input id="signup-birthday" type="date" required>
+										</div>
+										<div class="input-block">
+											<label for="signup-email">EMAIL</label>
+											<input id="signup-email" type="email" required>
+										</div>
+										<div class="input-block">
+											<label for="signup-password">PASSWORD</label>
+											<input id="signup-password" type="password" required>
+										</div>
+									</div>
+									<div class="column -second">
+										<div class="input-block">
+											<label for="signup-last-name">LAST NAME</label>
+											<input id="signup-last-name" type="email" required>
+										</div>
+										<div class="input-block">
+											<label for="signup-gender">GENDER</label>
+											<select name="GENDER" placeholder="SELECT GENDER">
+												<option value="" disabled selected>SELECT GENDER</option>
+												<option value="male">MALE</option>
+												<option value="female">FEMALE</option>
+											</select>
+										</div>
+										<div class="input-block">
+											<label for="signup-number">PHONE NUMBER</label>
+											<input id="signup-number" type="text" required>
+										</div>
+										<div class="input-block">
+											<label for="signup-password-confirm">CONFIRM PASSWORD</label>
+											<input id="signup-password-confirm" type="password" required>
+										</div>
+									</div>
+								</div>
+								<div class="input-block">
+									<label for="signup-type">CLIENT TYPE</label>
+									<select name="GENDER">
+										<option value="" disabled selected>SELECT USER TYPE</option>
+										<option value="client">CLIENT</option>
+										<option value="architect">ARCHITECT</option>
+									</select>
+								</div>
+							</fieldset>
+							<button type="submit" class="action secondary">SIGN UP</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<div class="modal-overlay" data-role="modal-overlay"></div>
+		</div>
+	</section>
+
+	<!-- Markup for Scroll Up Button -->
+	<div class="button-up">
+		<button class="action secondary" data-role="scroll-up">
+			BACK TO TOP
+		</button>
+	</div>
+	</main>
+
+	<!-- Markup for Footer -->
+	<footer>
+		<div class="contact-me">
+			<h3 class="title">Contact Information</h3>
+			<p><i class="fa-solid fa-envelope"></i> : arealapp@gmail.com</p>
+			<p><i class="fa-solid fa-address-book"></i> : +63 977 123 7892</p>
+
+			<p>
+				<i class="fa-solid fa-location-dot"></i> : Balibago, Angeles City, Pampanga
+			</p>
+		</div>
+		<div class="blank-space"></div>
+		<div class="services">
+			<h3 class="title">Current availability</h3>
+			<p>
+				We usually work on several projects but we’ll be happy to discuss new
+				opportunities. Let’s get in touch!
+			</p>
+		</div>
+		<div class="follow-me">
+			<h3 class="title">Follow us on</h3>
+			<ul class="link-list">
+				<li>
+					<a href="#">Facebook</a>
+				</li>
+				<li>
+					<a href="#">Instagram</a>
+				</li>
+			</ul>
+		</div>
+		<div class="developer-brand">
+			<p><i class="fa-solid fa-copyright"></i>AReal App Developers</p>
+			<p>Made with ♥ Philippines</p>
+		</div>
+	</footer>
+</body>
+
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/scrollup.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/calendar.js"></script>
+<script src="assets/js/sign-in.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</html>
